@@ -6,7 +6,7 @@
       <li>Blog</li>
       <li>Contact us</li>
     </ul>
-    <div style="font-size: 3rem; margin-bottom: 1rem; cursor: pointer">
+    <div style="font-size: 2rem; cursor: pointer; color: rgb(252, 70, 42)">
       <i class="fa-solid fa-shop"></i>
     </div>
   </div>
@@ -17,16 +17,20 @@ export default {};
 </script>
 
 <style>
-.head{
-    display: flex;
-     justify-content: flex-end;
-         width: 100%;
-     border-top-right-radius: 25px;
-     margin: 2rem;
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 90%;
+  border-top-right-radius: 25px;
+  margin: 2rem;
+  
 }
 .menu-list > li {
   display: inline;
   margin: 1rem;
+  font-size: 1rem;
+  
 }
 
 .menu-list > li:hover {

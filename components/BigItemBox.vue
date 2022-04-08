@@ -1,5 +1,5 @@
 <template>
-  <div class="item-container">
+  <div class="bigitem-container">
     <div v-for="item in items" :key="item.id" class="item-box">
       <div class="item">
         <div class="item-up">
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-.item-container {
+.bigitem-container {
    display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,8 +41,7 @@ export default {
   display: flex;
   justify-content: center;
   padding: 2rem;
-  height: 14rem;
-  margin-bottom: 3rem;
+  margin-bottom: 16rem;
 }
 .item-box:after {
   position: absolute;
@@ -64,8 +63,8 @@ export default {
   justify-content: flex-end;
   flex-direction: column;
   top: 2rem;
-  width: 20rem;
-  height: 25rem;
+  width: 12rem;
+  height: 18rem;
   background-color: rgb(255, 255, 255);
   border-radius: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -81,10 +80,10 @@ export default {
   justify-content: space-between;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 img {
-  width: 18rem;
+  width: 10rem;
   position: absolute;
   border-radius: 1rem;
 }

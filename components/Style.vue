@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>Style</h4>
+    <h3 style="font-weight: 400">Style</h3>
     <ul class="style-category">
       <li class="style-item">
         <input type="checkbox" />
@@ -25,7 +25,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  
+};
 </script>
 
 <style>
@@ -33,6 +35,7 @@ export default {};
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
+  font-weight: 200;
 }
 .style-item {
   display: flex;

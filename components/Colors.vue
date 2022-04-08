@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>Color</h4>
+    <h3 style="font-weight: 400">Color</h3>
     <ul class="colors-list">
       <li class="colors" style="background-color: rgb(240, 229, 229)"></li>
       <li class="colors" style="background-color: rgb(38, 38, 99)"></li>
@@ -25,6 +25,7 @@ export default {};
 .colors-list {
   margin-right: 1rem;
   width: 80%;
+  font-weight: 500;
 }
 .colors {
   display: inline-block;
