@@ -1,19 +1,26 @@
 <template>
-  <div class="bigitem-container">
-    <div v-for="item in items" :key="item.id" class="item-box">
-      <div class="item">
-        <div class="item-up">
-          <div style="font-size: 2rem">{{ item.name }}</div>
-          <div style="font-size: 1rem">{{item.description}}</div>
+  <div class="itemB-container">
+    <div v-for="item in items" :key="item.id" class="itemB-box">
+      <div class="itemB">
+        <div class="itemB-up">
+          <div style="font-size: 2rem; font-weight: 400; margin-bottom: 0.3rem">
+            {{ item.name }}
+          </div>
+          <div
+            style="font-size: 1rem; font-weight: 100; margin-bottom: 0.6rem"
+          >
+            {{ item.description }}
+          </div>
         </div>
-        <div class="item-bottom">
-          <div style="font-size: 2rem; font-weight: bold">{{item.price}}$</div>
-          <div style="font-size: 2rem; font-weight: bold">
-            <i style="color: yellow" class="fa-solid fa-star"></i>{{item.rating}}
+        <div class="itemB-bottom">
+          <div style="font-size: 2rem; font-weight: 400">{{ item.price }}$</div>
+        <div style="font-size: 2rem; font-weight: 400">
+            <i style="color: rgb(254,190,0); margin-right: 0.5rem; font-size: 0.8rem" class="fa-solid fa-star"></i
+            >{{ item.rating }}
           </div>
         </div>
       </div>
-      <img style="position: absolute" src="~/static/1.jpeg" />
+      <img class="itemBimg" src="~/static/2.jpg" />
     </div>
   </div>
 </template>
@@ -23,68 +30,75 @@ export default {
   data() {
     return {
       items: [
-        { id: "5", name: "Big Item", description: "Lana Furniture", price: 3000, rating: 2.5 },
+        {
+          id: "1",
+          name: 'SOFA "MARTA"',
+          description: "Lane Furniture",
+          price: 650,
+          rating: 4.8,
+        },
       ],
     };
   },
 };
 </script>
 
-<style scoped>
-.bigitem-container {
-   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+<style>
+.itemB-container {
+  display: flex;
+   flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: start;
 }
-.item-box {
+
+.itemB-box {
+  position: relative;
   display: flex;
   justify-content: center;
-  padding: 2rem;
-  margin-bottom: 16rem;
 }
-.item-box:after {
+
+.itemB-box:after {
   position: absolute;
   content: "";
   top: 10px;
 }
-.item-box:hover {
+.itemB-box:hover {
   cursor: pointer;
   transform: translateY(-3%);
 }
-.item:hover {
+.itemB:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(64, 255, 0, 0.3) 0px 30px 60px -30px,
     rgba(70, 130, 80, 0.35) 0px -2px 6px 0px inset;
 }
-.item {
+.itemB {
   position: relative;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  top: 2rem;
-  width: 12rem;
-  height: 18rem;
+  width: 32rem;
+  height: 22rem;
   background-color: rgb(255, 255, 255);
   border-radius: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-.item-up {
+.itemB-up {
   margin-left: 1rem;
 }
-.item-bottom {
+.itemB-bottom {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
-img {
-  width: 10rem;
+.itemBimg {
+  width: 30rem;
+  height: 20rem;
   position: absolute;
   border-radius: 1rem;
+  bottom: 9rem;
 }
 </style>

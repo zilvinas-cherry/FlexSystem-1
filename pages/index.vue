@@ -89,6 +89,7 @@ font-weight: 300;
   width: 100%;
   background-color: rgb(255, 255, 255);
   border-bottom-right-radius: 25px;
+  grid-template-columns: 1fr 3fr;
   grid-template-areas:
     "item1 modal"
     "item2 item2";
@@ -101,6 +102,7 @@ font-weight: 300;
     width: 100%;
     background-color: rgb(255, 255, 255);
     border-bottom-right-radius: 25px;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "modal"
       "item1"
@@ -111,16 +113,17 @@ font-weight: 300;
 .item1 {
   grid-area: item1;
   width: 100%;
+  
 }
 
 .big-modal {
   grid-area: modal;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   height: 30rem;
   width: 100%;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(255, 255, 255);
   border-radius: 25px;
 }
 .item22 {
