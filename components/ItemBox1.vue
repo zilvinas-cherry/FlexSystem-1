@@ -7,20 +7,21 @@
             {{ item.name }}
           </div>
           <div
-            style="font-size: 0.5rem; font-weight: 100; margin-bottom: 0.3rem"
+            style="font-size: 0.5rem; font-weight: 200; margin-bottom: 0.3rem"
           >
             {{ item.description }}
           </div>
         </div>
+        <div class="heart"><i class="fa-brands fa-gratipay"></i></div>
         <div class="item-bottom">
-          <div style="font-size: 1rem; font-weight: 400">{{ item.price }}$</div>
-        <div style="font-size: 1rem; font-weight: 400">
-            <i style="color: rgb(254,190,0); margin-right: 0.5rem; font-size: 0.8rem" class="fa-solid fa-star"></i
+          <div style="font-size: 1rem; font-weight: 600">{{ item.price }}$</div>
+          <div style="font-size: 1rem; font-weight: 600; color: black">
+            <i style="color: rgb(254, 190, 0); margin-right: 0.5rem; font-size: 0.8rem;" class="fa-solid fa-star"></i
             >{{ item.rating }}
           </div>
         </div>
       </div>
-      <img class="item1img" src="~/static/1.jpeg" />
+      <img class="item1img" :src="require(`~/static/${item.image}.jpg`)" />
     </div>
   </div>
 </template>
@@ -36,6 +37,7 @@ export default {
           description: "Lane Furniture",
           price: 100,
           rating: 3.5,
+          image: "1",
         },
         {
           id: "2",
@@ -43,6 +45,7 @@ export default {
           description: "Lane Furniture",
           price: 400,
           rating: 4.2,
+          image: "2",
         },
       ],
     };
@@ -92,11 +95,10 @@ export default {
 .item-box:after {
   position: absolute;
   content: "";
-  top: 10px;
-}
+ }
 .item-box:hover {
   cursor: pointer;
-  transform: translateY(-3%);
+  transform: translateY(-1%);
 }
 .item:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -112,7 +114,7 @@ export default {
   height: 11rem;
   background-color: rgb(255, 255, 255);
   border-radius: 1rem;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 .item-up {
   margin-left: 1rem;
@@ -132,5 +134,23 @@ export default {
   position: absolute;
   border-radius: 1rem;
   bottom: 6.5rem;
+}
+.heart {
+  display: flex;
+  position: absolute;
+  color: rgb(253, 74, 98);
+  font-size: 1.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  margin-left: 9rem;
+  margin-bottom: 11rem;
+  z-index: 10;
+}
+
+.heart:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 12px rgba(253, 74, 98, 0.9),
+  0px 0px 13px rgba(253, 74, 98, 0.9);
 }
 </style>

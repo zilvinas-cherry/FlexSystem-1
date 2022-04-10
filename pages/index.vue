@@ -3,10 +3,11 @@
     <div class="grid-container">
       <div class="grid-category">
         <div class="category-items">
-          <div style="font-weight: 400; font-size: 1.5rem">Category</div>
+          <div style="font-weight: 500; font-size: 1.5rem">Category</div>
           <MenuToggle />
           <h3 style="font-weight: 400">Filter by:</h3>
           <h3 style="font-weight: 400">Price</h3>
+          <PriceSlider />
           <Colors />
           <Style />
         </div>
@@ -42,14 +43,15 @@ body {
   font-family: 'Lexend Deca', sans-serif;
   min-height: 100vh;
   background-color: rgb(173, 177, 177);
+  color: #433E5C;
 }
 .grid-container {
   display: grid;
-  margin-right: 300px;
-  margin-left: 300px;
+  margin-right: 250px;
+  margin-left: 250px;
   margin-top: 150px;
   margin-bottom: 150px;
-  grid-template-columns: 300px 1fr ;
+  grid-template-columns: 300px 3fr ;
   grid-template-areas:
     "category header"
     "category contentas";
@@ -59,7 +61,7 @@ body {
   position: relative;
   display: flex;
   grid-area: category;
-  border-right: 1px solid rgb(123, 123, 123);
+  border-right: 1px solid rgb(123, 123, 123, 0.5);
   width: 100%;
   min-height: 100%;
   background-color: rgb(255, 255, 255);
@@ -80,7 +82,7 @@ body {
   background-color: rgb(255, 255, 255);
   width: 100% -1px;
   margin-left: 1px;
-font-weight: 300;
+  font-weight: 400;
   border-top-right-radius: 25px;
 }
 .grid-contentas {

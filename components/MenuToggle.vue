@@ -1,10 +1,10 @@
 <template>
   <div>
-    <label for="menu-toggle"><h3 style="font-weight: 400">Furniture:</h3></label>
+    <label for="menu-toggle"><h3 style="font-weight: 400">Furniture  <i style="font-size: 0.75rem" class="fa-solid fa-chevron-down"></i></h3></label>
     <input type="checkbox" id="menu-toggle" />
     <ul id="menu">
       <li id="li">
-        <label for="submenu-toggle" style="font-weight: 300">Living room</label>
+        <label for="submenu-toggle" style="font-weight: 300">Living room  <i style="font-size: 0.75rem" class="fa-solid fa-chevron-down"></i></label>
         <input type="checkbox" id="submenu-toggle" />
         <ul id="submenu" style="margin-top: 1rem; font-weight: 200">
           <li id="li">Sofas</li>

@@ -14,8 +14,19 @@ export default {
     script: [
       {
         src: "https://kit.fontawesome.com/6c63a1464e.js",
-        crossorigin: "anonymous",
+        crossorigin: "anonymous"
       },
+      {
+        type: "text/javascript",
+        src: "~static/function.js",
+        body: true
+      },
+      {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript",
+        body: true
+      },
+      
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -24,7 +35,7 @@ export default {
         href: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap",
         rel: "stylesheet",
       },
-      {href:"https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap", rel:"stylesheet"},
+      { href: "https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap", rel: "stylesheet" },
 
       {
         rel: "stylesheet",
