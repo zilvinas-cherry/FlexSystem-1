@@ -71,6 +71,7 @@ export default {
 
 <style>
 .item2-container {
+   animation: 3s ease-out 0s 1 opacityRise;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

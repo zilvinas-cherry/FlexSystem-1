@@ -54,7 +54,30 @@ export default {
 </script>
 
 <style>
-.item-container {
+@keyframes leftToRight {
+        0% {
+          Transform: Translatex(-50%);
+          opacity: 0;
+        }
+        100% {
+        Transform: Translatex(0%);
+        opacity: 1;
+        }
+      }
+
+@keyframes opacityRise {
+        0% {
+          opacity: 0.1;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+     
+.item-container { 
+  animation: 3s ease-out 0s 1 opacityRise;
+  animation: 3s ease-out 0s 1 leftToRight;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -146,6 +169,8 @@ export default {
   margin-left: 9rem;
   margin-bottom: 11rem;
   z-index: 10;
+   box-shadow: 0px 8px 12px rgba(253, 74, 98, 0.487),
+  0px 6px 13px rgba(253, 74, 98, 0.392);
 }
 
 .heart:hover {

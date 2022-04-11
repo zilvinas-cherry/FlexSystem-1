@@ -108,6 +108,8 @@ export default {
   margin-left: 27rem;
   margin-bottom: 25rem;
   z-index: 10;
+     box-shadow: 0px 8px 12px rgba(253, 74, 98, 0.487),
+  0px 6px 13px rgba(253, 74, 98, 0.392);
 }
 .big-heart:hover {
   cursor: pointer;
